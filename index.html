@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스타로드 카라반 리조트 | 하이엔드 글램핑 투자 분양</title>
+<meta name="description" content="최소 3,000만원 투자로 매월 375,000원 확정 임대료! 가평 명지산 하이엔드 글램핑 카라반 리조트 스타로드. 무료 상담 신청하세요.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --gold: #C9A96E;
+  --gold-light: #E8D5A8;
+  --gold-dark: #A68B4B;
+  --dark: #0D0F12;
+  --dark-surface: #161920;
+  --dark-card: #1C1F28;
+  --dark-border: #2A2D38;
+  --text-primary: #F2F0EC;
+  --text-secondary: #9B9DA6;
+  --text-muted: #6B6E78;
+  --accent-green: #4CAF7D;
+  --accent-red: #E85D5D;
+  --radius: 12px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: var(--dark);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ══════════════ UTILITY ══════════════ */
+.container { max-width: 480px; margin: 0 auto; padding: 0 20px; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* ══════════════ HERO SECTION ══════════════ */
+.hero {
+  position: relative;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg,
+      rgba(13,15,18,0.1) 0%,
+      rgba(13,15,18,0.3) 40%,
+      rgba(13,15,18,0.85) 70%,
+      rgba(13,15,18,1) 100%
+    );
+  z-index: 1;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%25" stop-color="%23192a45"/><stop offset="50%25" stop-color="%231a3352"/><stop offset="100%25" stop-color="%23234a6b"/></linearGradient><linearGradient id="mountain" x1="0" y1="0" x2="0" y2="1"><stop offset="0%25" stop-color="%231a2e1a"/><stop offset="100%25" stop-color="%230d1a0d"/></linearGradient></defs><rect fill="url(%23sky)" width="1200" height="800"/><path d="M0 400 Q200 300 400 380 Q600 280 800 350 Q1000 300 1200 370 L1200 800 L0 800Z" fill="url(%23mountain)" opacity="0.7"/><path d="M0 500 Q300 420 600 470 Q900 400 1200 450 L1200 800 L0 800Z" fill="%230a140a" opacity="0.6"/><ellipse cx="900" cy="200" rx="60" ry="60" fill="%23C9A96E" opacity="0.15"/></svg>') center/cover no-repeat;
+  animation: heroFloat 20s ease-in-out infinite;
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(201,169,110,0.12);
+  border: 1px solid rgba(201,169,110,0.3);
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gold);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  animation: fadeUp 0.8s 0.1s ease both;
+}
+
+.hero-title-main {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+
+.hero-title-main em {
+  font-style: normal;
+  color: var(--gold);
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  margin-bottom: 28px;
+  animation: fadeUp 0.8s 0.3s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ══════════════ CTA BUTTONS ══════════════ */
+.cta-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeUp 0.8s 0.4s ease both;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 24px;
+  border-radius: var(--radius);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--dark);
+  box-shadow: 0 4px 24px rgba(201,169,110,0.3);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(201,169,110,0.4);
+}
+
+.cta-kakao {
+  background: #FEE500;
+  color: #191919;
+}
+
+.cta-kakao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(254,229,0,0.25);
+}
+
+.cta-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* ══════════════ TRUST BAR ══════════════ */
+.trust-bar {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 0;
+  margin-top: 24px;
+  border-top: 1px solid var(--dark-border);
+  animation: fadeUp 0.8s 0.5s ease both;
+}
+
+.trust-item {
+  text-align: center;
+}
+
+.trust-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.trust-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ══════════════ SECTION COMMON ══════════════ */
+section { padding: 56px 0; }
+
+.section-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+  font-weight: 300;
+}
+
+/* ══════════════ INVESTMENT HIGHLIGHT ══════════════ */
+.invest-section {
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-surface) 100%);
+}
+
+.invest-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.invest-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.invest-card-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.invest-amount {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.invest-amount span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.invest-highlight {
+  color: var(--gold);
+}
+
+.invest-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 6px 12px;
+  background: rgba(76,175,125,0.1);
+  border: 1px solid rgba(76,175,125,0.2);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--accent-green);
+  font-weight: 500;
+}
+
+/* ══════════════ INCOME TABLE ══════════════ */
+.income-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  border: 1px solid var(--dark-border);
+}
+
+.income-table thead th {
+  background: var(--dark-card);
+  padding: 14px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.income-table thead th:first-child {
+  text-align: left;
+}
+
+.income-table tbody td {
+  padding: 16px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid rgba(42,45,56,0.5);
+  color: var(--text-secondary);
+}
+
+.income-table tbody td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.income-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.income-table .highlight-row td {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.table-footnote {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-align: center;
+  font-weight: 300;
+}
+
+/* ══════════════ FEATURES ══════════════ */
+.features-section {
+  background: var(--dark-surface);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.feature-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 20px 16px;
+  transition: border-color 0.3s;
+}
+
+.feature-card:hover {
+  border-color: rgba(201,169,110,0.3);
+}
+
+.feature-icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feature-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ══════════════ WHY SECTION ══════════════ */
+.why-section {
+  background: linear-gradient(180deg, var(--dark-surface) 0%, var(--dark) 100%);
+}
+
+.why-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.why-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 20px;
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+}
+
+.why-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  color: var(--dark);
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.why-text h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.why-text p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+/* ══════════════ NEWS / PRESS ══════════════ */
+.press-section { background: var(--dark); }
+
+.press-card {
+  display: block;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--dark-border);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.press-card:first-child { padding-top: 0; }
+.press-card:last-child { border-bottom: none; }
+.press-card:hover { opacity: 0.7; }
+
+.press-source {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.press-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.press-arrow {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* ══════════════ CONSULTANT SECTION ══════════════ */
+.consultant-section {
+  background: var(--dark-surface);
+}
+
+.consultant-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.consultant-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-dark) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 28px;
+  color: var(--dark);
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.consultant-name {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.consultant-role {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.consultant-company {
+  font-size: 15px;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.consultant-msg {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 16px;
+  background: rgba(201,169,110,0.05);
+  border-radius: 12px;
+  border-left: 2px solid var(--gold);
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+/* ══════════════ BOTTOM CTA ══════════════ */
+.bottom-cta {
+  padding: 48px 0 40px;
+  background: linear-gradient(180deg, var(--dark-surface) 0%, var(--dark) 50%);
+  text-align: center;
+}
+
+.bottom-cta-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.bottom-cta-sub {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+
+/* ══════════════ FLOATING CTA ══════════════ */
+.floating-cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, transparent 0%, var(--dark) 30%);
+  padding: 20px 20px 24px;
+  pointer-events: none;
+}
+
+.floating-cta .cta-group {
+  max-width: 480px;
+  margin: 0 auto;
+  pointer-events: all;
+  flex-direction: row;
+}
+
+.floating-cta .cta-btn {
+  flex: 1;
+  padding: 14px 12px;
+  font-size: 14px;
+}
+
+/* ══════════════ FOOTER ══════════════ */
+footer {
+  padding: 32px 0 100px;
+  text-align: center;
+  border-top: 1px solid var(--dark-border);
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.footer-company {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.footer-legal {
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.8;
+  opacity: 0.6;
+}
+
+/* ══════════════ DIVIDER ══════════════ */
+.gold-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin-bottom: 24px;
+  opacity: 0.5;
+}
+
+/* ══════════════ SCROLL ANIMATIONS ══════════════ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ══════════════ MARKET HOOK BANNER ══════════════ */
+.market-hook {
+  background: linear-gradient(90deg, rgba(232,93,93,0.08) 0%, rgba(201,169,110,0.08) 100%);
+  border-bottom: 1px solid rgba(232,93,93,0.15);
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+.market-hook-inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.market-hook-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(232,93,93,0.15);
+  border: 1px solid rgba(232,93,93,0.25);
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent-red);
+  white-space: nowrap;
+}
+
+.market-hook-tag .blink {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--accent-red);
+  border-radius: 50%;
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+.market-hook-text {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.market-hook-text strong {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+/* ══════════════ STOCK COMPARISON ══════════════ */
+.stock-compare {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 24px;
+}
+
+.stock-compare-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.compare-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.compare-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.compare-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  width: 60px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.compare-bar-wrap {
+  flex: 1;
+  height: 36px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.compare-bar {
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: width 1.5s ease;
+  width: 0;
+}
+
+.bar-stock {
+  background: linear-gradient(90deg, rgba(232,93,93,0.15) 0%, rgba(232,93,93,0.35) 100%);
+  color: var(--accent-red);
+}
+.bar-stock.animated { width: 45%; }
+
+.bar-starlord {
+  background: linear-gradient(90deg, rgba(201,169,110,0.15) 0%, rgba(201,169,110,0.45) 100%);
+  color: var(--gold);
+}
+.bar-starlord.animated { width: 85%; }
+
+.compare-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 4px 0;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.compare-vs::before, .compare-vs::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--dark-border);
+}
+
+.zigzag-icon {
+  display: inline-block;
+  color: var(--accent-red);
+  font-size: 14px;
+  animation: zigzag 2s ease-in-out infinite;
+}
+
+@keyframes zigzag {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-3px); }
+  75% { transform: translateY(3px); }
+}
+
+.steady-icon {
+  display: inline-block;
+  color: var(--gold);
+  font-size: 14px;
+}
+
+/* ══════════════ RESPONSIVE ══════════════ */
+@media (min-width: 768px) {
+  .container { max-width: 560px; padding: 0 32px; }
+  .hero-title-main { font-size: 40px; }
+  .invest-amount { font-size: 42px; }
+  section { padding: 72px 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ MARKET HOOK BANNER ═══════════ -->
+<div class="market-hook">
+  <div class="container market-hook-inner">
+    <span class="market-hook-tag"><span class="blink"></span> 증시 불안</span>
+    <span class="market-hook-text">주식이 흔들릴 때, <strong>확정 수익</strong>이 답입니다</span>
+  </div>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content container">
+    <div class="hero-badge">2호점 분양 상담 접수중</div>
+    <h1>Starlord Caravan Resort</h1>
+    <div class="hero-title-main">
+      최소 <em>3,000만원</em>으로<br>매월 수익을 만드세요
+    </div>
+    <p class="hero-subtitle">
+      전쟁·금리·환율에 흔들리는 주식 대신,<br>
+      매월 통장에 꽂히는 <strong style="color:var(--gold);font-weight:500">확정 임대 수익</strong>
+    </p>
+    <div class="cta-group">
+      <a href="tel:01057204472" class="cta-btn cta-primary">
+        <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        전화 상담 신청
+      </a>
+      <a href="https://open.kakao.com/o/sOx7Kpki" class="cta-btn cta-kakao" target="_blank">
+        <svg class="cta-icon" viewBox="0 0 24 24" fill="#191919"><path d="M12 3C6.477 3 2 6.463 2 10.691c0 2.726 1.8 5.117 4.508 6.476-.152.553-.988 3.563-1.02 3.788 0 0-.02.166.088.229.108.063.235.03.235.03.31-.044 3.588-2.345 4.153-2.74.669.096 1.36.147 2.036.147 5.523 0 10-3.463 10-7.691S17.523 3 12 3z"/></svg>
+        오픈채팅 상담
+      </a>
+    </div>
+    <div class="trust-bar">
+      <div class="trust-item">
+        <div class="trust-value">3,000만</div>
+        <div class="trust-label">최소 투자금</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-value">100%</div>
+        <div class="trust-label">투자금 환매 보장</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-value">매월</div>
+        <div class="trust-label">확정 수익 입금</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PRESS ═══════════ -->
+<section class="press-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Media</div>
+      <h2 class="section-title">언론이 주목한<br>스타로드</h2>
+      <div class="gold-divider"></div>
+    </div>
+
+    <div class="reveal">
+      <a href="https://www.nbntv.kr/news/articleView.html?idxno=339027" class="press-card" target="_blank" rel="noopener">
+        <div class="press-source">NBN미디어</div>
+        <div class="press-title">"1호점 성공 신화 잇는다" 스타로드, 하이엔드 글램핑의 완성형 '스타로드_디 에테르' 주목</div>
+        <div class="press-arrow">기사 보기 →</div>
+      </a>
+      <a href="https://sports.khan.co.kr/article/202507081004003" class="press-card" target="_blank" rel="noopener">
+        <div class="press-source">스포츠경향</div>
+        <div class="press-title">코원이엔디 김덕헌 대표 "하이엔드 글램핑 대중화" 가평 스타로드 카라반 리조트 오픈</div>
+        <div class="press-arrow">기사 보기 →</div>
+      </a>
+      <a href="https://naver.me/Fc5F1Qrb" class="press-card" target="_blank" rel="noopener">
+        <div class="press-source">넥스트데일리</div>
+        <div class="press-title">코원이엔디, 가평 럭셔리 글램핑 '스타로드' 겨울 예약 90% 달성</div>
+        <div class="press-arrow">기사 보기 →</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FEATURES ═══════════ -->
+<section class="features-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Facilities</div>
+      <h2 class="section-title">5성급 호텔을 넘어선<br>하이엔드 글램핑</h2>
+      <p class="section-desc">가평 명지산 자락, 자연 속 프라이빗 럭셔리</p>
+    </div>
+
+    <div class="feature-grid reveal">
+      <div class="feature-card">
+        <div class="feature-icon">🏕️</div>
+        <div class="feature-name">프리미엄 카라반</div>
+        <div class="feature-desc">11.5평형 호텔급 인테리어 & 어메니티</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">♨️</div>
+        <div class="feature-name">노천 자쿠지</div>
+        <div class="feature-desc">객실별 개별 프라이빗 자쿠지 완비</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏊</div>
+        <div class="feature-name">야외 수영장</div>
+        <div class="feature-desc">공용 풀장 & 세련된 바비큐 공간</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔥</div>
+        <div class="feature-name">핀란드식 사우나</div>
+        <div class="feature-desc">파이어플레이스 & 전용 야외 주방</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WHY STARLORD ═══════════ -->
+<section class="why-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Why Starlord</div>
+      <h2 class="section-title">스타로드가<br>특별한 이유</h2>
+    </div>
+
+    <div class="why-list">
+      <div class="why-item reveal">
+        <div class="why-number">1</div>
+        <div class="why-text">
+          <h4>원스톱 책임 경영</h4>
+          <p>(주)코원이엔디가 개발·시행·운영까지 직접 총괄. 서비스 품질 저하 원천 차단</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-number">2</div>
+        <div class="why-text">
+          <h4>1호점 검증 완료</h4>
+          <p>가평 1호점 성공적 안착, 겨울 예약률 90% 달성. 실제 운영 데이터 기반 설계</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-number">3</div>
+        <div class="why-text">
+          <h4>확장하는 브랜드</h4>
+          <p>2호점 '디 에테르' 런칭 예정. 양평·포천·서해안·제주 전국 네트워크 구축 중</p>
+        </div>
+      </div>
+      <div class="why-item reveal">
+        <div class="why-number">4</div>
+        <div class="why-text">
+          <h4>성장하는 시장</h4>
+          <p>하이엔드 레저 시장 급성장. 프리미엄 글램핑 수요 지속 확대 중</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ INVESTMENT HIGHLIGHT ═══════════ -->
+<section class="invest-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Investment</div>
+      <h2 class="section-title">증시가 흔들릴수록<br>빛나는 안정 수익</h2>
+      <p class="section-desc">전쟁·금리 리스크로 주가가 요동치는 지금,<br>매월 확정 임대료가 입금되는 투자를 시작하세요.</p>
+    </div>
+
+    <div class="stock-compare reveal" id="compareChart">
+      <div class="stock-compare-title">투자 안정성 비교</div>
+      <div class="compare-bars">
+        <div class="compare-row">
+          <span class="compare-label">주식</span>
+          <div class="compare-bar-wrap">
+            <div class="compare-bar bar-stock" id="barStock">
+              <span class="zigzag-icon">↕</span>&nbsp;등락 반복
+            </div>
+          </div>
+        </div>
+        <div class="compare-vs">VS</div>
+        <div class="compare-row">
+          <span class="compare-label">스타로드</span>
+          <div class="compare-bar-wrap">
+            <div class="compare-bar bar-starlord" id="barStarlord">
+              <span class="steady-icon">→</span>&nbsp;매월 확정 수익
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="invest-card reveal">
+      <div class="invest-card-label">매월 수익 구조</div>
+      <div class="invest-amount invest-highlight" style="font-size:24px;line-height:1.4;">확정 임대료<br><span style="font-size:14px;color:var(--text-secondary);font-weight:400;">매월 내 통장으로 입금</span></div>
+      <div class="invest-note">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        1호점 운영 데이터로 검증 완료
+      </div>
+    </div>
+
+    <div class="invest-card reveal" style="text-align:center;border-color:rgba(201,169,110,0.25);">
+      <div style="font-size:14px;color:var(--text-secondary);margin-bottom:8px;">구체적인 수익 구조가 궁금하시다면</div>
+      <div style="font-size:18px;font-weight:700;color:var(--gold);margin-bottom:16px;">전화 한 통으로 상세 안내 받으세요</div>
+      <a href="tel:01057204472" class="cta-btn cta-primary" style="display:inline-flex;">
+        <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        수익 구조 상담받기
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ CONSULTANT ═══════════ -->
+<section class="consultant-section">
+  <div class="container">
+    <div class="consultant-card reveal">
+      <div class="consultant-avatar" style="width:100%;height:180px;border-radius:12px;overflow:hidden;margin-bottom:20px;background:url('starlord-pool.jpg') center/cover no-repeat;font-size:0;"></div>
+      <div class="consultant-name">김순아 차장</div>
+      <div class="consultant-role">분양 상담 전문</div>
+      <div class="consultant-company">(주)코원이엔디</div>
+      <div class="consultant-msg">
+        "스타로드 카라반 리조트의 투자 구조와 수익 안정성에 대해 자세히 안내드리겠습니다. 궁금하신 점은 편하게 연락 주세요."
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ BOTTOM CTA ═══════════ -->
+<section class="bottom-cta">
+  <div class="container">
+    <div class="reveal">
+      <div class="bottom-cta-title">지금 바로 상담받으세요</div>
+      <p class="bottom-cta-sub">투자 구조·수익 상세 안내는 상담으로 진행됩니다</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FLOATING CTA ═══════════ -->
+<div class="floating-cta">
+  <div class="cta-group">
+    <a href="tel:01057204472" class="cta-btn cta-primary">
+      <svg class="cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      전화 상담
+    </a>
+    <a href="https://open.kakao.com/o/sOx7Kpki" class="cta-btn cta-kakao" target="_blank">
+      <svg class="cta-icon" viewBox="0 0 24 24" fill="#191919"><path d="M12 3C6.477 3 2 6.463 2 10.691c0 2.726 1.8 5.117 4.508 6.476-.152.553-.988 3.563-1.02 3.788 0 0-.02.166.088.229.108.063.235.03.235.03.31-.044 3.588-2.345 4.153-2.74.669.096 1.36.147 2.036.147 5.523 0 10-3.463 10-7.691S17.523 3 12 3z"/></svg>
+      오픈채팅
+    </a>
+  </div>
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-logo">STARLORD</div>
+    <div class="footer-company">(주)코원이엔디 · 대표 김덕헌</div>
+    <div class="footer-company">경기도 고양시 덕양구 향동로 128, 스타비즈 4st, 1511호</div>
+    <div class="footer-company" style="margin-bottom:12px">대표전화 1533-2568</div>
+    <div class="footer-legal">
+      상세 조건은 상담을 통해 확인하시기 바랍니다.<br><br>
+      © 2026 COWON E&D. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script>
+// Scroll reveal animation
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// Animate comparison bars when visible
+const compareObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const barStock = document.getElementById('barStock');
+      const barStarlord = document.getElementById('barStarlord');
+      if (barStock) barStock.classList.add('animated');
+      if (barStarlord) setTimeout(() => barStarlord.classList.add('animated'), 300);
+      compareObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const compareChart = document.getElementById('compareChart');
+if (compareChart) compareObserver.observe(compareChart);
+
+// Hide floating CTA at top
+const floatingCta = document.querySelector('.floating-cta');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 600) {
+    floatingCta.style.opacity = '1';
+    floatingCta.style.transform = 'translateY(0)';
+  } else {
+    floatingCta.style.opacity = '0';
+    floatingCta.style.transform = 'translateY(100%)';
+  }
+});
+floatingCta.style.opacity = '0';
+floatingCta.style.transform = 'translateY(100%)';
+floatingCta.style.transition = 'all 0.4s ease';
+</script>
+
+</body>
+</html>
